@@ -1,4 +1,4 @@
-name = "Restaurant Hugo"
+name = "theme"
 license = "MIT"
 licenselink = "https://github.com/themefisher/restaurant-hugo/blob/master/LICENSE"
 description = "Hugo port of the Themefisher’s restaurant Template"
