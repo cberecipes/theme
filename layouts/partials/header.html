@@ -25,7 +25,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right" id="top-nav">
 							{{ range site.Menus.main }}
-							<li><a href="#{{.URL}}">{{ .Name }}</a></li>
+							<li><a href="{{.URL}}">{{ .Name }}</a></li>
 							{{ end }}
 						</ul>
 					</div><!-- /.navbar-collapse -->
@@ -33,7 +33,7 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right" id="top-nav">
 							{{ range site.Menus.main }}
-							<li><a href="{{site.BaseURL}}#{{.URL}}">{{ .Name }}</a></li>
+							<li><a href="{{site.BaseURL}}{{.URL}}">{{ .Name }}</a></li>
 							{{ end }}
 						</ul>
 					</div><!-- /.navbar-collapse -->

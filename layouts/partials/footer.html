@@ -4,16 +4,11 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="block wow fadeInLeft" data-wow-delay="200ms">
-					<h3>{{ with site.Params.footer.contactInfoTitle }} {{ . | safeHTML }} {{ end }}</h3>
+					<h3>About <span>ME</span></h3>
 					<div class="info">
-						<ul>
-							{{ range site.Params.footer.contactItem }}
-							<li>
-								<h4><i class="{{.icon}}"></i>{{ .title }}</h4>
-								<p>{{ .content | markdownify }}</p>
-							</li>
-							{{end}}
-						</ul>
+						<p>Cooking - my stress buster.</p>
+						<br>
+						<p>Cooking is not about the perfect recipe, its all about what we bring out as result!</p>
 					</div>
 				</div>
 			</div>
@@ -37,7 +32,7 @@
 			<!-- .col-md-4 close -->
 			<div class="col-md-4">
 				<div class="block wow fadeInLeft" data-wow-delay="1100ms">
-					<div class="gallary">
+					<!-- <div class="gallary">
 						<h3>{{ with site.Params.footer.galleryTitle }} {{ . | safeHTML }} {{ end }}</h3>
 						<ul class="gallery">
 							{{ range site.Params.footer.gallery }}
@@ -45,7 +40,7 @@
 										src="{{ .image | absURL }}" alt=""></a></li>
 							{{ end }}
 						</ul>
-					</div>
+					</div> -->
 					<div class="social-media-link">
 						<h3>{{ with site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h3>
 						<ul>
