@@ -1,8 +1,8 @@
-[build]
-  publish = "cberecipes/public"
-  command = "hugo --gc"
-  
-[build.environment]
-  HUGO_VERSION = "0.73.0"
-  HUGO_THEME = "repo"
-  HUGO_BASEURL = "/"
+[context.production.environment]
+HUGO_VERSION = "0.82.0"
+HUGO_ENV = "production"
+RUBY_VERSION = "2.6.2"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.82.0"
+RUBY_VERSION = "2.6.2"
